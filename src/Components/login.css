@@ -1,0 +1,28 @@
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: .5rem;
+    box-shadow: 0 0 2rem;
+    height: 30rem;
+    width: 50rem;
+    background-color: black;
+    color: white;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7rem;
+}
+.login input{
+    width: 20rem;
+    height: 2rem;
+    background-color: antiquewhite;
+}
+.login button{
+    width: 10rem;
+    height: 2rem;
+    background-color: green;
+}

@@ -1,0 +1,35 @@
+.products{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 10rem;
+    margin: 5rem;
+   
+ 
+    
+}
+img{
+    width: 10rem;
+    height: 10rem;
+}
+.card{
+width: 20rem;
+height: 30rem;
+text-align: center;
+box-shadow: 0 0 2rem;
+display: flex;
+justify-content: center;
+flex-direction: column;
+
+align-items: center;
+gap: .5rem;
+text-decoration: none;
+}
+
+.card button{
+    background-color: rgb(24, 48, 199);
+    width: 19rem;
+    height: 2.7rem;
+    padding: .5rem;
+    text-align: center;
+    color: white;
+}

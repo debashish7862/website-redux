@@ -1,0 +1,21 @@
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    justify-content: space-between;
+}
+.nav h1{
+    margin-left: 2rem;
+}
+.nav a{
+    color: white;
+    text-decoration: none;
+    
+}
+.nav button{
+    margin-right: 2rem;
+}

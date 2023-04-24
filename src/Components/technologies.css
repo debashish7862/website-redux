@@ -1,0 +1,28 @@
+.technologies{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5rem;
+    background-color: green;
+    height: 30rem;
+    box-shadow: 0 0  2rem;
+    
+}
+.left{
+    background-color: rgb(5, 5, 5);
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-style: italic;
+    text-decoration: none;
+}
+.right{
+    background-color: rgb(242, 237, 237);
+    width: 70rem;
+    padding: 2rem;
+}
+.html img{
+    width: 250;
+    height: 250;
+}
