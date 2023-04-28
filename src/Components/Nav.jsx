@@ -19,6 +19,7 @@ export default function Nav() {
         <Link to="/products">Products</Link>
         <Link to="/support">Support</Link>
         <Link to="/technologies">Technologies</Link>
+        <Link to="/input">InputRedux</Link>
         <Link to="/cart">Cart{}</Link>
         <button onClick={()=>{setIsloggin(false)
         navigate("/")

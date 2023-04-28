@@ -18,6 +18,8 @@ import Css from './Components/Css';
 import Js from './Components/Js';
 import Reactcomp from './Components/Reactcomp';
 import Protectedroutes from './Components/Protectedroutes';
+import InputComp from './Components/Redux/InputComp';
+import Text from './Components/Redux/Text';
 
 function App() {
   const   {islogedin}=useContext(AuthContext)
@@ -60,6 +62,7 @@ function App() {
       <Route path='/productdetails/:id/' element={islogedin ? <Productdetails/>:<Navigate to={"/"}/>}></Route>
       <Route path='/addtocart' element={islogedin ? <Cart/>:<Navigate to={"/"}/>}></Route>
       <Route path='*' element={<Pagenotfound/>}></Route> 
+      <Route path='/input' element={islogedin ? <div><InputComp/><br/><Text/></div> :<Navigate to={"/"}/>}></Route>
       
       </Routes>
       </div> :<Login/>

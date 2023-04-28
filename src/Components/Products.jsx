@@ -2,24 +2,42 @@ import React from 'react'
 import { useEffect,useState } from 'react'
 import './product.css'
 import { Link } from 'react-router-dom';
+import {useDispatch,useSelector} from 'react-redux'
+
+import ActionCreator from './Redux/ActionCreator';
 export default function Products() {
-    const [product,setProduct]=useState([]);
+
+
+const dispatch =useDispatch()
+  const{products}=   useSelector((storedata)=>{
+        return storedata;
+     })
+
+
+
+    
+     
      useEffect(()=>{
-        fetch("https://fakestoreapi.com/products")
-        .then((res)=>res.json())
-        .then((data=>{
-            console.log(data)
-            setProduct(data)
+        if(products.length===0){
+           console.log("Sent Request")
+                fetch("https://fakestoreapi.com/products")
+                .then((res)=>res.json())
+                .then((data=>{
+                    console.log(data)
+                   dispatch(ActionCreator(data))
+        
+                }
+                ))
+             
 
         }
-        ))
-     })
+     },[])
     
   return (
     <div className='products'>
         
         {
-            product.map((ele)=>{
+            products.map((ele)=>{
                 return<div className='card'>
                 <img src={ele.image} alt="" />
                 <p>{ele.title}</p>
